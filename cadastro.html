@@ -3,55 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styleform.css">
     <title>Formulario de cadastro</title>
 </head>
 <body>
-    <form action="#">
+    <form action="#" class="form-login">
         <h2>Formulario de Cadastro</h2>
         <label for="name">
             <span>Nome</span>
             <input type="text" name="nome" id="name" placeholder="Nome">
         </label>
-        <br>
         <label for="sobrenome">
             <span>Sobrenome</span>
             <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
         </label>
-        <br>
         <label for="data-nasc">
             <span>Data de Nascimento</span>
             <input type="date" name="data-de-nascimento" id="data-nasc">
         </label>
-        <br>
         <label for="sexo">
             <span>Sexo</span>
-            <br>
             <input type="radio" name="sexo" id="sexo">Masculino
 
             <input type="radio" name="sexo" id="sexo">Feminino
         </label>
-        <br>
         <label for="email">
             <span>Seu melhor e-mail</span>
             <input type="email" name="email" id="email">
         </label>
-        <br>
         <label for="confirme-email">
             <span>Confirme seu e-mail</span>
             <input type="email" name="email" id="confirme-email">
         </label>
-        <br>
         <label for="senha">
             <span>Senha</span>
             <input type="password" name="senha" id="senha">
         </label>
-        <br>
         <label for="confirme-senha">
             <span>Confirme sua senha</span>
             <input type="password" name="senha" id="confirme-senha">
         </label>
-
-        <br>
         <input type="reset" value="Limpar">
         <input type="submit" value="Fazer Cadastro">
         
