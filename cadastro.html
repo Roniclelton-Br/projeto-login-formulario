@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styleform.css">
     <title>Formulario de cadastro</title>
 </head>
 <body>
-    <form action="#" class="form-login">
-        <h2>Formulario de Cadastro</h2>
+    <form action="#" method="post" class="form-login">
+        <div class="heading">
+            <a href="./index.html" class="icone-voltar">
+                <i class="bi bi-arrow-left-circle" title="Voltar"></i>
+            </a>
+            <h2>Formulario de Cadastro</h2>
+        </div>
         <label for="name">
             <span>Nome</span>
-            <input type="text" name="nome" id="name" placeholder="Nome">
+            <input type="text" name="nome" id="name" placeholder="Nome" maxlength="20" required>
         </label>
         <label for="sobrenome">
             <span>Sobrenome</span>
-            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" maxlength="40" required>
         </label>
         <label for="data-nasc">
             <span>Data de Nascimento</span>
-            <input type="date" name="data-de-nascimento" id="data-nasc">
+            <input type="date" name="data-de-nascimento" id="data-nasc" required>
         </label>
-        <label for="sexo">
+        <label for="sexo" class="sex">
             <span>Sexo</span>
-            <input type="radio" name="sexo" id="sexo">Masculino
-
-            <input type="radio" name="sexo" id="sexo">Feminino
+            <select name="sexo" id="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value=" nao-comentar">Prefiro não comentar</option>
+            </select>
         </label>
         <label for="email">
             <span>Seu melhor e-mail</span>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="e-mail" required>
         </label>
         <label for="confirme-email">
             <span>Confirme seu e-mail</span>
-            <input type="email" name="email" id="confirme-email">
+            <input type="email" name="email" id="confirme-email" placeholder="e-mail" required>
         </label>
         <label for="senha">
             <span>Senha</span>
-            <input type="password" name="senha" id="senha">
+            <input type="password" name="senha" id="senha" placeholder="*********" maxlength="8" required>
         </label>
         <label for="confirme-senha">
             <span>Confirme sua senha</span>
-            <input type="password" name="senha" id="confirme-senha">
+            <input type="password" name="senha" id="confirme-senha" placeholder="********" maxlength="8" required>
         </label>
-        <input type="reset" value="Limpar">
-        <input type="submit" value="Fazer Cadastro">
+        <div class="btns">
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Fazer Cadastro">
+        </div>
         
     </form>
 </body>
